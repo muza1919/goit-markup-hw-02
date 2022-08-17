@@ -1,0 +1,95 @@
+/* колір основного тексту #212121;*/
+ /* другорядний колір тексту #757575;*/
+/* Базовий колір фону #F5F5F5 */
+/* Додатковий колір фону #2F303A;*/
+ /* Додатковий колір фону #F5F4FA;*/
+/* Білий  #FFFFFF;*/
+/* Акцент #2196F3;*/
+:root{
+    --primary-text-color:#757575 ;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #ffffff;
+}
+
+body{
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
+}
+.list{
+    list-style: none;
+}
+.logo{
+    color: #000;
+}
+.site .link{
+    color:var(--title-text-color);
+}
+.site .link:hover,
+.site .link:focus{
+    color: var(--accent-color);
+}
+.site .link.current{
+    color: var(--accent-color)
+}
+.addr-header .link{
+    color:var(--primary-text-color);
+}
+.addr-header .link:hover,
+.addr-header .linkafocus{
+    color: var(--accent-color);
+}
+
+.decision{
+    background-color: #2F303A;
+}
+.decision-title{
+    color: var(--primary-white-color);
+}
+.btn-service{
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    border-color: transparent;
+}
+.features .title{
+    color:var(--title-text-color);
+}
+.section-title{
+    color:var(--title-text-color);
+}
+
+.section-team{
+    background-color: #F5F4FA;
+}
+.team .title{
+   color: var(--title-text-color);
+}
+.projects .title{
+    color: var(--title-text-color);
+}
+
+.footer{
+    background-color:#2F303A ;
+}
+.territorially{
+    color: var(--primary-white-color);
+}
+.addr-footer .link{
+    color: rgba(255, 255, 255, 0.6);
+}
+.addr-footer .link:hover,
+.addr-footer .link:focus{
+    color: var(--accent-color);
+}
+
+
+.btn-filters{
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+    border-color: transparent;
+}
+.btn-filters:hover,
+.btn-filters:focus{
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
