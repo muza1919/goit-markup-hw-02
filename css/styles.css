@@ -1,29 +1,48 @@
-/* колір основного тексту #212121;*/
- /* другорядний колір тексту #757575;*/
-/* Базовий колір фону #F5F5F5 */
-/* Додатковий колір фону #2F303A;*/
- /* Додатковий колір фону #F5F4FA;*/
-/* Білий  #FFFFFF;*/
-/* Акцент #2196F3;*/
 :root{
     --primary-text-color:#757575 ;
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --primary-white-color: #ffffff;
+    --black:#000000;
+    --bg-color:#F5F5F5;
+    --bg-color-dark: #2F303A;
+    --bg-color-misty: #F5F4FA;
+    --color-addr-footer: rgba(255, 255, 255, 0.6);
 }
 
 body{
     color: var(--primary-text-color);
     background-color: var(--primary-white-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+.header{
+    background-color: var(--primary-white-color);
 }
 .list{
     list-style: none;
 }
-.logo{
-    color: #000;
+.link{
+    text-decoration: none;
 }
+.logo{
+    color: var(--black);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+.web{
+    color: var(--accent-color);
+}
+
+
 .site .link{
     color:var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 .site .link:hover,
 .site .link:focus{
@@ -34,6 +53,10 @@ body{
 }
 .addr-header .link{
     color:var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 .addr-header .link:hover,
 .addr-header .linkafocus{
@@ -41,41 +64,94 @@ body{
 }
 
 .decision{
-    background-color: #2F303A;
+    background-color: var(--bg-color-dark);
 }
 .decision-title{
     color: var(--primary-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 .btn-service{
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     border-color: transparent;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    cursor: pointer;
 }
 .features .title{
     color:var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
 }
-.section-title{
-    color:var(--title-text-color);
+.features .details{
+    font-size: 14px;
+    line-height: 1.7;
 }
 
 .section-team{
-    background-color: #F5F4FA;
+    background-color: var(--bg-color-misty);
+}
+.section-title{
+    color:var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+.team .card{
+    background-color: var(--primary-white-color);
 }
 .team .title{
    color: var(--title-text-color);
+   font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
 }
+.team .profession{
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
 .projects .title{
     color: var(--title-text-color);
 }
 
 .footer{
-    background-color:#2F303A ;
+    background-color:var(--bg-color-dark);
 }
-.territorially{
+.logo-footer{
     color: var(--primary-white-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.9;
+}
+.addr-footer .territorially{
+    color: var(--primary-white-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    
 }
 .addr-footer .link{
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--color-addr-footer);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    
 }
 .addr-footer .link:hover,
 .addr-footer .link:focus{
@@ -85,11 +161,22 @@ body{
 
 .btn-filters{
     color: var(--title-text-color);
-    background-color: #F5F4FA;
+    background-color: var(--bg-color-misty);
     border-color: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    border-radius: 4px;
+    font-family: inherit;
+    cursor: pointer;
 }
 .btn-filters:hover,
 .btn-filters:focus{
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+}
+.projects .type{
+    font-size: 16px;
+    line-height: 1.9;
 }

@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=h1, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav>
-        <a href="" hreflang="en" class="logo">WebStudio</a>
+        <a href="" hreflang="en" class="logo link"
+          ><span class="web">Web</span>Studio</a
+        >
         <ul class="site list">
           <li><a href="./index.html" class="link current">Студія</a></li>
           <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
@@ -18,7 +26,11 @@
         </ul>
       </nav>
       <ul class="addr-header list">
-        <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="link"
+            >info@devstudio.com</a
+          >
+        </li>
         <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
       </ul>
     </header>
@@ -33,27 +45,27 @@
         <ul class="features list">
           <li>
             <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p>
+            <p class="details">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
           <li>
             <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
-            <p>
+            <p class="details">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
           <li>
             <h3 class="title">ПЛАНУВАННЯ</h3>
-            <p>
+            <p class="details">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
           <li>
             <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p>
+            <p class="details">
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
@@ -92,17 +104,17 @@
       <section class="section-team">
         <h2 class="section-title">Наша команда</h2>
         <ul class="team list">
-          <li>
+          <li class="card">
             <img
               src="./images/igor.jpg"
               alt="Product Designer"
               width="270"
               height="260"
             />
-            <h3  class="title">Ігор Дем'яненко</h3>
-            <p lang="en">Product Designer</p>
+            <h3 class="title">Ігор Дем'яненко</h3>
+            <p lang="en" class="profession">Product Designer</p>
           </li>
-          <li>
+          <li class="card">
             <img
               src="./images/olga.jpg"
               alt="Frontend Develope"
@@ -110,10 +122,10 @@
               height="260"
             />
             <h3 class="title">Ольга Рєпіна</h3>
-            <p lang="en">Frontend Developer</p>
+            <p lang="en" class="profession">Frontend Developer</p>
           </li>
 
-          <li>
+          <li class="card">
             <img
               src="./images/mykola.jpg"
               alt="Marketing"
@@ -121,9 +133,9 @@
               height="260"
             />
             <h3 class="title">Микола Тарасов</h3>
-            <p lang="en">Marketing</p>
+            <p lang="en" class="profession">Marketing</p>
           </li>
-          <li>
+          <li class="card">
             <img
               src="./images/myhailo.jpg"
               alt="UI Designer"
@@ -131,19 +143,27 @@
               height="260"
             />
             <h3 class="title">Михайло Єрмаков</h3>
-            <p lang="en">UI Designer</p>
+            <p lang="en" class="profession">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
     <footer class="footer">
-      <a href="" hreflang="en">WebStudio</a>
+      <a href="" hreflang="en" class="logo-footer link"
+        ><span class="web">Web</span>Studio</a
+      >
 
       <address>
-        <p class="territorially">м. Київ, пр-т Лесі Українки, 26</p>
         <ul class="addr-footer list">
-          <li><a href="mailto:info@devstudio.com"  class="link">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+          <li><p class="territorially">м. Київ, пр-т Лесі Українки, 26</p></li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+          </li>
         </ul>
       </address>
     </footer>
